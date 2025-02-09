@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mon Site Web</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -13,7 +14,7 @@
                     <a href="#accueil">Accueil</a>
                 </li>
                 <li>
-                    <a href="#apropos">A propos</a>
+                    <a href="#apropos">À propos</a>
                 </li>
                 <li>
                     <a href="#contact">Contact</a>
@@ -21,47 +22,52 @@
             </ul>
         </nav>
     </header>
-    <section id="accueil">
-<img
- src="image/HTML-Blog-Cover.png" 
- alt="">
-<p class="describe-me">
-    Je suis convaincu que ma passion pour le développement et mon expertise dans les langages de programmation que vous utilisez feront de moi un atout précieux pour votre entreprise. J'ai hâte de contribuer à la réalisation de vos projets et d'apporter de nouvelles idées et solutions.
-</p>
-    </section>
-    <section id="apropos">
-<ol>
-    <li>Name: Mbazoa</li>
-    <li>LastName: samuel</li>
-    <li>Email: mendougasamuel60@gmail.com</li>
-    <LI>Phone:+221 772914162</LI>
-    <li>
-        Academic background:
-        <ol>
-            <li>GoMyCode certificat</li>
-            <li>computer science bachelor degree</li>
-        </ol>
-    </li>
-</ol>
-
-<iframe src="https://www.youtube.com/watch?v=lukT_WB5IB0" frameborder="0"
-width="80%"
-height="641"
-allowfullscreen
-></iframe>
-    </section>
-    <section id="Contact">
-        <form action="">
-            <label for="">Full Name</label>
-            <input type="text" name="fullname" />
-            <label for="">Email</label>
-            <input type="email" name="email" />
-            <label for="">Phone number</label>
-            <input type="tel" name="phonenumber" />
-            <label for="comment">Message</label>
-            <textarea name="comment"></textarea>
-            <button>envoyer</button>
-        </form>
-    </section>
+    <div class="container">
+        <section id="accueil">
+            <p class="describe-me">
+                Je suis convaincu que ma passion pour le développement et mon expertise dans les langages de programmation que vous utilisez feront de moi un atout précieux pour votre entreprise. 
+                J'ai hâte de contribuer à la réalisation de vos projets et d'apporter de nouvelles idées et solutions.
+            </p>
+            <img src="image/HTML-Blog-Cover.png" alt="Image de couverture">
+        </section>
+        <section id="apropos">
+            <ol>
+                <li>Name: Mbazoa</li>
+                <li>LastName: Samuel</li>
+                <li>Email: mendougasamuel60@gmail.com</li>
+                <li>Phone: +221 772914162</li>
+                <li>
+                    Academic background:
+                    <ol>
+                        <li>GoMyCode certificat</li>
+                        <li>Computer science bachelor degree</li>
+                    </ol>
+                </li>
+            </ol>
+            <h3>Ma présentation vidéo</h3>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Vous pouvez me contacter via les informations suivantes :</p>
+            <ul>
+                <li>Email: mendougasamuel60@gmail.com</li>
+                <li>Téléphone: +221 772914162</li>
+            </ul>
+        </section>
+        <section id="formulaire">
+            <h2>Donnez vos données</h2>
+            <form action="/submit" method="post">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required><br><br>
+                <label for="prenom">Prénom:</label>
+                <input type="text" id="prenom" name="prenom" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                <input type="submit" value="Envoyer">
+            </form>
+        </section>
+    </div>
 </body>
 </html>
